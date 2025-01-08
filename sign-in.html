@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-in</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 5em;
+        }
+        .container {
+            width: 450px;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid black;
+            border-radius: 20px;
+            background: #f2f0ea;
+            backdrop-filter: blur(3px);
+
+        }
+
+        input {
+            width: 40vh;
+            height: 3em;
+            border-radius: 1em;
+            border-style: none;
+            margin: 1rem;
+            font-size: 16px;
+            padding-left: 1em;
+        }
+
+        label, p {
+            margin: 1em;
+            font-size: 16px;
+
+        }
+
+        button {
+            width: 40vh;
+            height: 3em;
+            border-radius: 1em;
+            margin-left: 1em;
+            background-color: rgb(70, 196, 70);
+            border: none;
+            font-size: 16px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .newuser {
+            display: inline-flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 70%;
+        }
+
+        .password-icon > svg {
+            position: absolute;
+            top: 53%;
+            left: 77%;
+        }
+
+        .user-icon > svg {
+            position: absolute;
+            top: 32%;
+            left: 77%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>Sign-in</h1>
+    <form action="#" method="post">
+        <div class="user-icon">
+            <label for="username">Username:</label><br>
+            <input type="text" name="username" id="username" placeholder="Jhondoe@yahoo.com" required>
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+              </svg>
+        </div>
+        <div class="password-icon">
+            <label for="password">Password:</label><br>
+            <input type="password" name="password" id="password" required>
+            <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="undefined">
+            <path d="M480-312q70 0 119-49t49-119q0-70-49-119t-119-49q-70 0-119 49t-49 119q0 70 49 119t119 49Zm0-72q-40 0-68-28t-28-68q0-40 28-68t68-28q40 0 68 28t28 68q0 40-28 68t-68 28Zm0 192q-142.6 0-259.8-78.5Q103-349 48-480q55-131 172.2-209.5Q337.4-768 480-768q142.6 0 259.8 78.5Q857-611 912-480q-55 131-172.2 209.5Q622.6-192 480-192Zm0-288Zm0 216q112 0 207-58t146-158q-51-100-146-158t-207-58q-112 0-207 58T127-480q51 100 146 158t207 58Z"/></svg>
+        </div>
+            <p><a href="#">Forgot Password?</a></p>
+            <button>Sign in</button>
+    </form>
+    <div class="newuser">
+        <p>Don't have an account?</p>
+        <a href="#">Register</a>
+    </div>
+    
+    </div>
+</body>
+</html>
